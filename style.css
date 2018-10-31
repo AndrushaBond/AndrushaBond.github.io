@@ -1,0 +1,149 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    
+    color: #000;
+}
+
+body{
+    background-color: #FFAF65;
+    min-width: 1000px;
+    background-image: url(fon2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+p{
+    margin-bottom: 8px;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.menu{
+    width: 100%;
+    position: relative;
+    
+    height: 57px;
+    list-style: none;
+    background-color: #FFBF65;
+    -webkit-box-shadow: 7px 6px 54px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 7px 6px 54px -1px rgba(0,0,0,0.4);
+    box-shadow: 7px 6px 54px -1px rgba(0,0,0,0.4);
+}
+
+.menuBtn{
+/*    display: inline-block;*/
+    float: left;
+    padding: 12px;
+    width: 300px;
+/*    background-color: #FF7E00;*/
+    font-family: cursive;
+    font-size: 24px;
+    text-align: center;
+    transition: .3s;
+}
+
+.menuBtn:hover{
+    transition: .5s;
+/*    transform: scale(1.15);*/
+    background-color: #FF7E00
+}
+.menuBtnActive{
+/*
+    padding-left: 5px;
+    border-left: 5px red solid;
+*/
+    background-color: #FFA020
+}
+
+
+/* Main */
+
+.mainBlock{
+    width: 75%;
+    min-width: 600px;
+    font-family: monospace;
+    padding: 30px 20px;
+    font-size: 18px;
+    text-indent: 20px;
+    font-weight: 600;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 70px;
+    background-color: #FF9900;
+    -webkit-box-shadow: 7px 6px 54px -1px rgba(0,0,0,0.9);
+    -moz-box-shadow: 7px 6px 54px -1px rgba(0,0,0,0.9);
+    box-shadow: 7px 9px 54px -1px rgba(0,0,0,0.9);
+}
+
+.blockTitle{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 1000;
+    font-family: Impact;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+    border-bottom: 1px #0005 solid
+}
+
+.blockImg{
+    float: left;
+    max-height: 450px;
+    max-width: 600px;
+    margin: 15px 40px 15px 10px;
+    //border: 3px #444 double;
+    //box-shadow: 7px 9px 54px -1px rgba(0,0,0,0.3)
+}
+
+.hyper{
+    text-decoration: ;
+}
+
+.mainBlock:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+/* Подвал */
+
+footer{
+    margin-top: 100px;
+    padding: 5px;
+    flex: 0 0 auto;
+    background: linear-gradient(to right, rgba(255,175,101,0) 15%,rgba(255,48,48,0.9) 32%,rgba(255,48,48,0.9) 66%,rgba(255,175,101,0) 85%);
+    text-align: center;
+/*    font-weight: 600;*/
+    font-family: fantasy;
+/*
+    -webkit-box-shadow: 7px 6px 54px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 7px -6px 54px -1px rgba(0,0,0,0.4);
+    box-shadow: 7px -6px 54px -1px rgba(0,0,0,0.6);
+*/
+}
+
+/* Some funny */
+
+.wrapperYashka{
+    height: 100%;
+    width: 100%;
+    background-color: #020202;
+    position: fixed;
+    background-size: cover;
+    background-image: url("Glich.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+
+.visibleYashka{
+    transition: 2s;
+    opacity: 1;
+}
